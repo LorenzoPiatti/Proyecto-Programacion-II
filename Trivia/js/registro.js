@@ -119,14 +119,14 @@ function validarTerminos(aceptado) {
         if (icon) icon.style.color = "rgba(193, 6, 6, 0.831)";
         mensajeError.textContent = "Debe aceptar los términos y condiciones.";
         mensajeError.classList.add("active");
-        grupo.querySelector(".input-container")?.classList.add("error");
+        grupo.querySelector(".input-container").classList.add("error");
         return false;
     } else {
         if (icon) icon.style.color = "rgba(0, 128, 0, 0.7)";
         mensajeError.textContent = "";
         mensajeError.classList.remove("active");
-        grupo.querySelector(".input-container")?.classList.remove("error");
-        grupo.querySelector(".input-container")?.classList.add("success");
+        grupo.querySelector(".input-container").classList.remove("error");
+        grupo.querySelector(".input-container").classList.add("success");
         return true;
     }
 }
