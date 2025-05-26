@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Orbitron:wght@600&display=swap');
+
 body {
-    background-color: rgb(48, 47, 47);
-    color: black;
-    font-family: 'Roboto', sans-serif;
+    background: #060025;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,21 +13,23 @@ body {
 }
 
 .login-container {
-    background: #f9f9f9;
+    background: #6f45d4;
     padding: 30px 40px;
     border-radius: 15px;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
     width: 100%;
     max-width: 450px;
     box-sizing: border-box;
-    border: 1px solid #000;
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .login-form h2 {
     text-align: center;
     margin-bottom: 20px;
-    font-size: 26px;
-    color: black;
+    font-size: 30px;
+    color: white;
+    font-weight: 600;
+    font-family: 'Press Start 2P', cursive;
 }
 
 .form-group {
@@ -38,8 +42,8 @@ body {
 .input-container {
     display: flex;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.05);
-    border: 2px solid rgba(0, 0, 0, 0.3);
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.2);
     border-radius: 10px;
     padding: 0 10px;
     transition: border-color 0.3s ease;
@@ -49,21 +53,34 @@ input, select {
     flex: 1;
     border: none;
     background: transparent;
-    color: rgba(0, 0, 0, 0.557);
+    color: white;
     padding: 14px 10px;
     font-size: 16px;
     outline: none;
+    font-family: 'Orbitron', sans-serif;
 }
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+input:-moz-placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+input::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
 .error-message {
     font-size: 13px;
-    color: rgba(193, 6, 6, 0.831);
-    
+    color: #ff6b6b;
+    margin-top: 5px;
+    font-family: 'Orbitron', sans-serif;
 }
 .error-message.active {
     display: block;
 }
 .icon {
-    color: black;
+    color: rgba(255, 255, 255, 0.8);
     font-size: 18px;
     margin-right: 10px;
 }
@@ -76,52 +93,113 @@ input, select {
 }
 
 .input-container.error {
-    border-color: rgba(193, 6, 6, 0.831);
+    border-color: #ff6b6b;
 }
 .input-container.error .icon,
 .input-container.error .validation-icon {
-    color: rgba(193, 6, 6, 0.831);
+    color: #ff6b6b;
 }
 .input-container.success {
-    border-color: rgba(0, 128, 0, 0.532);
+    border-color: #6eff6e;
 }
 .input-container.success .icon,
 .input-container.success .validation-icon {
-    color: rgba(0, 128, 0, 0.532);
+    color: #6eff6e;
+}
+
+#grupo-terminos {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#grupo-terminos label {
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 15px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+#terminos {
+    width: auto;
+    margin-right: 8px;
+    accent-color: #f7197d;
+    padding: 0;
+}
+
+#grupo-terminos a {
+    color: #f7197d;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+#grupo-terminos a:hover {
+    color: #d4166e;
 }
 
 button[type="submit"] {
     width: 100%;
-    padding: 12px;
-    background-color: black;
-    color: white;
-    font-size: 16px;
+    padding: 14px;
+    background: #f7197d;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    font-family: 'Orbitron', sans-serif;
 }
 button[type="submit"]:hover {
-    background-color: #333;
+    background: #d4166e;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+p {
+    text-align: center;
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: 'Orbitron', sans-serif;
+}
+
+p a {
+    color: #ff1493;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+p a:hover {
+    color: #ff4da6;
+    text-decoration: underline;
 }
 
 @media (max-width: 480px) {
     .login-container {
-        padding: 20px;
-        max-width: 100%;
+        padding: 25px;
+        max-width: 90%;
+    }
+
+    .login-form h2 {
+        font-size: 24px;
     }
 
     .form-group input,
     .form-group select {
-        font-size: 14px;
+        font-size: 15px;
+        padding: 12px 8px;
     }
 
     .form-group .icon {
-        font-size: 16px;
+        font-size: 17px;
     }
 
     button[type="submit"] {
-        font-size: 14px;
-        padding: 10px;
+        font-size: 16px;
+        padding: 12px;
     }
 }

@@ -63,6 +63,7 @@ h2 {
 
 .login:hover {
   background-color: #5b37ad;
+  transform: translateY(-2px);
 }
 
 .register {
@@ -72,4 +73,5 @@ h2 {
 
 .register:hover {
   background-color: #d4166e;
+  transform: translateY(-2px);
 }
