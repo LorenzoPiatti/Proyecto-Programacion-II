@@ -45,8 +45,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (esUsuarioValido && esEmailValido && esPasswordValido && esGeneroValido && esTerminosValido) {
             formulario.reset();
-            resetearValidacion();
             alert("¡Registro exitoso!");
+            window.location.href='login.html';
         }
     });
 });
@@ -112,21 +112,18 @@ function validarGenero(genero) {
 
 function validarTerminos(aceptado) {
     const grupo = document.getElementById("grupo-terminos");
-    const icon = grupo.querySelector(".validation-icon");
     const mensajeError = grupo.querySelector(".error-message");
 
     if (!aceptado) {
-        if (icon) icon.style.color = "rgba(193, 6, 6, 0.831)";
         mensajeError.textContent = "Debe aceptar los términos y condiciones.";
         mensajeError.classList.add("active");
-        grupo.querySelector(".input-container").classList.add("error");
+        grupo.querySelector(".input-container-terminos").classList.add("error");
         return false;
     } else {
-        if (icon) icon.style.color = "rgba(0, 128, 0, 0.7)";
         mensajeError.textContent = "";
         mensajeError.classList.remove("active");
-        grupo.querySelector(".input-container").classList.remove("error");
-        grupo.querySelector(".input-container").classList.add("success");
+        grupo.querySelector(".input-container-terminos").classList.remove("error");
+        grupo.querySelector(".input-container-terminos").classList.add("success");
         return true;
     }
 }
@@ -151,18 +148,4 @@ function aplicarExito(grupo, icon, mensajeError) {
     icon.style.color = "rgba(0, 128, 0, 0.7)";
     mensajeError.textContent = "";
     mensajeError.classList.remove("active");
-}
-
-
-function resetearValidacion() {
-    document.querySelectorAll(".form-group").forEach(grupo => {
-        const contenedor = grupo.querySelector(".input-container");
-        contenedor.classList.remove("error", "success");
-        const icon = grupo.querySelector(".validation-icon");
-        icon.classList.remove("fa-times-circle", "fa-check-circle");
-        icon.style.color = "transparent";
-        const mensajeError = grupo.querySelector(".error-message");
-        mensajeError.textContent = "";
-        mensajeError.classList.remove("active");
-    });
 }

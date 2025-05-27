@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Orbitron:wght@600&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Orbitron", sans-serif;
+  background-color: #060025;
+  color: white;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.left-section {
+  flex: 0.6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.welcome-message {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2.2rem;
+  color: #f7197d;
+}
+
+.main-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.btn {
+  padding: 15px 30px;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  background-color: #6f45d4;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #5b37ad;
+  transform: translateY(-2px);
+}
+
+.right-section {
+  flex: 0.25;
+  background-color: #5b37ad;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.right-section h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3.2rem;
+  color: #f7197d;
+}
+
+.ranking-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ranking-list li {
+  padding: 10px 0;
+  font-size: 1.2em;
+  border-bottom: 1px solid #888;
+}
+
+.player-name {
+  font-weight: bold;
+}
+
+.player-points {
+  float: right;
+}

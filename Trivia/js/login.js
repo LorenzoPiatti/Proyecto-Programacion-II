@@ -24,6 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
             formulario.reset();
             resetearValidacion();
             alert("¡Inicio de sesión exitoso!");
+            window.location.href='main.html';
         }
     });
 });

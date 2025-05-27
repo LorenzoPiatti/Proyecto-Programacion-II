@@ -1,39 +1,46 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trivia Flash</title>
-    <link rel="icon" href="assets/img/icono.png" type="image/png">
-    <link rel="stylesheet" href="./css/trivia.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-</head>
-<body>
+    <link rel="icon" href="assets/img/icono.png" type="image/png" />
+    <link rel="stylesheet" href="./css/trivia.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div class="trivia-container">
-        <div class="left-panel">
-            <div class="hourglass-container">
-                <img src="assets/img/reloj.gif" alt="Reloj de arena animado" class="hourglass-img">
-            </div>
-            <div class="timer-circle">
-                <span id="timer" class="timer-text">30</span>
-            </div>
+      <div class="left-panel">
+        <div class="hourglass-container">
+          <img
+            src="assets/img/reloj.gif"
+            alt="Reloj de arena animado"
+            class="hourglass-img"
+          />
         </div>
-        <div class="right-panel">
-            <h2 class="category-text">[CATEGORIA]</h2>
-            <div class="question-container">
-                <p class="question-text">1ERA PREGUNTA</p>
-            </div>
-            <div class="answers-container">
-                <button class="answer-btn">RESPUESTA</button>
-                <button class="answer-btn">RESPUESTA</button>
-                <button class="answer-btn">RESPUESTA</button>
-                <button class="answer-btn">RESPUESTA</button>
-            </div>
-            <button class="next-button">
-                SIGUIENTE <i class="fas fa-arrow-right"></i>
-            </button>
+        <div class="timer-circle">
+          <span id="timer" class="timer-text">30</span>
         </div>
+      </div>
+      <div class="right-panel">
+        <h2 class="category-text">[CATEGORIA]</h2>
+        <div class="question-container">
+          <p class="question-text">1ERA PREGUNTA</p>
+        </div>
+        <div class="answers-container">
+          <button class="answer-btn">RESPUESTA</button>
+          <button class="answer-btn">RESPUESTA</button>
+          <button class="answer-btn">RESPUESTA</button>
+          <button class="answer-btn">RESPUESTA</button>
+        </div>
+        <button class="next-button">
+          SIGUIENTE <i class="fas fa-arrow-right"></i>
+        </button>
+      </div>
     </div>
     <script src="./js/trivia.js"></script>
-</body>
+  </body>
 </html>

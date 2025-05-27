@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Página Principal</title>
+  <link rel="stylesheet" href="./css/main.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="main-container">
+    <div class="left-section">
+      <h1 class="welcome-message">Hola, Usuario</h1>
+      <div class="main-buttons">
+        <button onclick="window.location.href='trivia.html'" class="btn play"><i class="fas fa-play"></i> Jugar</button>
+        <button onclick="window.location.href='index.html'" class="btn logout"><i class="fas fa-sign-out-alt"></i> Cerrar sesión</button>
+      </div>
+    </div>
+    
+    <div class="right-section">
+      <h2>Ranking</h2>
+      <ul class="ranking-list">
+        <li><span class="player-name">Juan</span> - <span class="player-points">300 pts</span></li>
+        <li><span class="player-name">Ana</span> - <span class="player-points">250 pts</span></li>
+        <li><span class="player-name">Luis</span> - <span class="player-points">220 pts</span></li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

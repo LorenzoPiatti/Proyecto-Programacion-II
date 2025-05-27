@@ -23,7 +23,7 @@ body {
 
 .left-panel {
   flex: 0.35;
-  background-color: #4b0a7a;
+  background-color: #5b37ad;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -60,7 +60,7 @@ body {
   transform: translateX(-50%);
   width: 80px;
   height: 80px;
-  background-color: #2a0a5e;
+  background-color: #5b37ad;
   border: 5px solid white;
   border-radius: 50%;
   display: flex;
@@ -89,7 +89,7 @@ body {
 .category-text {
   font-family: "Press Start 2P", cursive;
   font-size: 2.5em;
-  color: #ff00ff;
+  color: #f7197d;
   margin-bottom: 30px;
   text-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
 }
@@ -120,7 +120,7 @@ body {
   padding: 20px;
   border: none;
   border-radius: 15px;
-  background: linear-gradient(to right, #ff00ff, #e600e6);
+  background: #f7197d;
   color: white;
   font-family: "Orbitron", sans-serif;
   font-size: 1.3em;
@@ -132,24 +132,24 @@ body {
 }
 
 .answer-btn:hover {
-  transform: translateY(-5px);
+  transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
-  background: linear-gradient(to right, #e600e6, #ff00ff);
+  background: #d4166e;
 }
 
 .answer-btn.correct {
-  background: linear-gradient(to right, #00ff00, #00cc00);
+  background: #6eff6e;
 }
 
 .answer-btn.incorrect {
-  background: linear-gradient(to right, #ff0000, #cc0000);
+  background: #ff6b6b;
 }
 
 .next-button {
   padding: 15px 35px;
   border: none;
   border-radius: 50px;
-  background: linear-gradient(to right, #8a2be2, #6a0dad);
+  background: #6f45d4;
   color: white;
   font-family: "Orbitron", sans-serif;
   font-size: 1.2em;
@@ -163,9 +163,9 @@ body {
 }
 
 .next-button:hover {
-  transform: translateY(-3px);
+  transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
-  background: linear-gradient(to right, #6a0dad, #8a2be2);
+  background: #5b37ad;
 }
 
 .next-button i {
@@ -255,3 +255,6 @@ body {
     padding: 10px 25px;
   }
 }
+
+/* Resultado */
+
