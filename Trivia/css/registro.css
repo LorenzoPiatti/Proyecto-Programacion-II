@@ -108,13 +108,15 @@ input::-webkit-input-placeholder {
 }
 
 #grupo-terminos {
-    flex-direction: row;
-    align-items: center;
-    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
 }
 
 #grupo-terminos label {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     color: rgba(255, 255, 255, 0.8);
     font-size: 15px;
