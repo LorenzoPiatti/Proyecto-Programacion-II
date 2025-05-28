@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
             formulario.reset();
             resetearValidacion();
             alert("¡Inicio de sesión exitoso!");
-            window.location.href = "trivia.html"
+            window.location.href = "main.html"
         }
     });
 });
