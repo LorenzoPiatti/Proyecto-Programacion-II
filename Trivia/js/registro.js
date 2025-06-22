@@ -148,3 +148,19 @@ function aplicarExito(grupo, icon, mensajeError) {
     mensajeError.textContent = "";
     mensajeError.classList.remove("active");
 }
+
+
+function resetearValidacion() {
+    document.querySelectorAll(".form-group").forEach(grupo => {
+        const contenedor = grupo.querySelector(".input-container");
+        contenedor.classList.remove("error", "success");
+        const icon = grupo.querySelector(".validation-icon");
+        //valido si icono existe porque me daba error porque en validacion no tiene icono.
+        if (icon) {icon.classList.remove("fa-times-circle", "fa-check-circle");
+        icon.style.color = "transparent";
+        }
+        const mensajeError = grupo.querySelector(".error-message");
+        mensajeError.textContent = "";
+        mensajeError.classList.remove("active");
+    });
+}
