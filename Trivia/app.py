@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, redirect, session
-from database import init_db, insertar_puntaje, obtener_ranking, registrar_usuario, verificar_usuario
+from .database import init_db, insertar_puntaje, obtener_ranking, registrar_usuario, verificar_usuario
 import os
 
 app = Flask(__name__)
