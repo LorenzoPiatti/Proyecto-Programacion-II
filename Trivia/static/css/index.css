@@ -89,8 +89,11 @@ h2 {
     height: 50vh;
     clip-path: none;
     background-size: cover;
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
+    min-height: 200px;
+    overflow: visible;
+    display: block;
   }
   h1 {
     font-size: 1.8rem;
