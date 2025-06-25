@@ -90,3 +90,144 @@ body {
 .player-points {
   float: right;
 }
+
+@media (max-width: 479px) {
+  .main-container {
+    flex-direction: column;
+    padding: 20px;
+    height: auto;
+  }
+
+  .left-section {
+    flex: none;
+    width: 100%;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .welcome-message {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .main-buttons {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 12px 0;
+    font-size: 1rem;
+    border-radius: 25px;
+  }
+
+  .right-section {
+    flex: none;
+    width: 100%;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+  }
+
+  .right-section h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .ranking-list li {
+    font-size: 1rem;
+    padding: 8px 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main-container {
+    flex-direction: row;
+    padding: 40px;
+    height: 100vh;
+  }
+
+  .left-section {
+    flex: 0.65;
+    gap: 25px;
+  }
+
+  .welcome-message {
+    font-size: 2rem;
+  }
+
+  .main-buttons {
+    gap: 18px;
+  }
+
+  .btn {
+    padding: 14px 28px;
+    font-size: 1.05rem;
+    border-radius: 28px;
+  }
+
+  .right-section {
+    flex: 0.3;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 0 18px rgba(255, 255, 255, 0.1);
+  }
+
+  .right-section h2 {
+    font-size: 2.8rem;
+    margin-bottom: 18px;
+  }
+
+  .ranking-list li {
+    font-size: 1.1rem;
+    padding: 9px 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main-container {
+    flex-direction: row;
+    padding: 50px;
+    height: 100vh;
+  }
+
+  .left-section {
+    flex: 0.6;
+    gap: 30px;
+  }
+
+  .welcome-message {
+    font-size: 2.2rem;
+  }
+
+  .main-buttons {
+    gap: 20px;
+  }
+
+  .btn {
+    padding: 15px 30px;
+    font-size: 1.1em;
+    border-radius: 30px;
+  }
+
+  .right-section {
+    flex: 0.25;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  }
+
+  .right-section h2 {
+    font-size: 3.2rem;
+    margin-bottom: 20px;
+  }
+
+  .ranking-list li {
+    font-size: 1.2em;
+    padding: 10px 0;
+  }
+}

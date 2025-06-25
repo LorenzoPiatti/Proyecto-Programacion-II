@@ -180,3 +180,176 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+@media (max-width: 479px) {
+  .trivia-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .left-panel {
+    flex: none;
+    width: 100%;
+    height: 300px;
+    padding: 20px 0;
+  }
+
+  .hourglass-container {
+    width: 150px;
+    height: 150px;
+  }
+
+  .timer-circle {
+    width: 60px;
+    height: 60px;
+    bottom: 30px;
+  }
+
+  .timer-text {
+    font-size: 1.5em;
+  }
+
+  .right-panel {
+    flex: none;
+    width: 100%;
+    padding: 20px;
+  }
+
+  #category-screen {
+    gap: 15px;
+  }
+
+  .category-text {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+  }
+
+  .question-text {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+  }
+
+  .answers-container {
+    max-width: 100%;
+    gap: 12px;
+  }
+
+  .answer-btn {
+    font-size: 1em;
+    padding: 12px;
+    border-radius: 8px;
+  }
+
+  .next-button {
+    padding: 10px 25px;
+    font-size: 0.9em;
+    border-radius: 40px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .trivia-container {
+    flex-direction: row;
+  }
+
+  .left-panel {
+    flex: 0.4;
+    padding: 20px;
+  }
+
+  .hourglass-container {
+    width: 200px;
+    height: 200px;
+  }
+
+  .timer-circle {
+    width: 70px;
+    height: 70px;
+    bottom: 40px;
+  }
+
+  .timer-text {
+    font-size: 1.8em;
+  }
+
+  .right-panel {
+    flex: 0.6;
+    padding: 30px;
+  }
+
+  .category-text {
+    font-size: 1.8em;
+  }
+
+  .question-text {
+    font-size: 1.3em;
+  }
+
+  .answers-container {
+    max-width: 90%;
+    gap: 14px;
+  }
+
+  .answer-btn {
+    font-size: 1.1em;
+    padding: 14px;
+  }
+
+  .next-button {
+    padding: 11px 28px;
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .trivia-container {
+    flex-direction: row;
+  }
+
+  .left-panel {
+    flex: 0.35;
+  }
+
+  .hourglass-container {
+    width: 250px;
+    height: 250px;
+  }
+
+  .timer-circle {
+    width: 80px;
+    height: 80px;
+    bottom: 50px;
+  }
+
+  .timer-text {
+    font-size: 2.2em;
+  }
+
+  .right-panel {
+    flex: 0.65;
+    padding: 40px;
+  }
+
+  .category-text {
+    font-size: 2em;
+  }
+
+  .question-text {
+    font-size: 1.5em;
+  }
+
+  .answers-container {
+    max-width: 500px;
+    gap: 15px;
+  }
+
+  .answer-btn {
+    font-size: 1.2em;
+    padding: 15px;
+  }
+
+  .next-button {
+    padding: 12px 30px;
+    font-size: 1em;
+  }
+}
