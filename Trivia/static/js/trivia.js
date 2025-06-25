@@ -128,6 +128,7 @@ function siguientePregunta() {
 }
 //inicia el reloj de cuenta regresiva
 function iniciarTemporizador() {
+    sonidoContador.currentTime = 0;
     tiempo = 30;
     if (sonidoContador.paused) {
         sonidoContador.loop = true;
