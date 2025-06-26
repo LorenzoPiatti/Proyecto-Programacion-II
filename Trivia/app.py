@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, redirect, session
-from .database import init_db, insertar_puntaje, obtener_ranking, registrar_usuario, verificar_usuario
+from Trivia.database import init_db, insertar_puntaje, obtener_ranking, registrar_usuario, verificar_usuario
 import os
 
 app = Flask(__name__)
@@ -73,7 +73,7 @@ def main():
     if 'usuario' not in session:
         return redirect('/login')
     usuario = session.get('usuario')
-    puntajes = obtener_ranking()  # NUEVO: trae lista de (nombre, puntaje, fecha)
+    puntajes = obtener_ranking()  
     return render_template("main.html", usuario=usuario, puntajes=puntajes)
 
 
@@ -86,7 +86,7 @@ def trivia():
 
 @app.route('/debug_usuarios')
 def debug_usuarios():
-    from database import obtener_usuarios
+    from Trivia.database import obtener_usuarios
     return str(obtener_usuarios())
 
 if __name__ == '__main__':
