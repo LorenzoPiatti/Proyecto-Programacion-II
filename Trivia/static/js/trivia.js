@@ -165,6 +165,8 @@ function mostrarResultado() {
     document.getElementById("timer-circle").style.display = "none";
     document.getElementById("score-text").textContent = `Tu puntaje: ${puntaje}/${preguntas.length}`;
 
+    sonidoContador.pause();
+    
     // enviar puntaje a Flask
     fetch("/resultado", {
         method: "POST",
