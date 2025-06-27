@@ -1,7 +1,8 @@
 import sqlite3
 from datetime import datetime
+import os
 
-DB_NAME = 'ranking.db'
+DB_NAME = os.path.join(os.path.dirname(__file__), "ranking.db")
 
 def init_db():
     with sqlite3.connect(DB_NAME) as conn:
@@ -30,7 +31,7 @@ def init_db():
         conn.commit()
 
 def insertar_puntaje(nombre, puntaje):
-    with sqlite3.connect("ranking.db") as conn:
+    with sqlite3.connect(DB_NAME) as conn:
         cursor = conn.cursor()
 
         # Verificar si el usuario ya existe
